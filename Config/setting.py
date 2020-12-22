@@ -33,7 +33,7 @@ HEADER = """
 PY3 = sys.version_info >= (3,)
 
 DB_TYPE = getenv('db_type', 'REDIS').upper()
-DB_HOST = getenv('db_host', '3.91.93.233')
+DB_HOST = getenv('db_host', 'localhost')
 DB_PORT = getenv('db_port', 6379)
 DB_PASSWORD = getenv('db_password', '')
 

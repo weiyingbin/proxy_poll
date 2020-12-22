@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
-python proxyPool.py webserver &
-python proxyPool.py schedule
+
+# 启动redis
+sudo docker start 409d1ac0129e
+
+sudo python proxyPool.py webserver &
+sudo python proxyPool.py schedule
